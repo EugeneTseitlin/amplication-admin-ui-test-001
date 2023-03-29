@@ -49,6 +49,17 @@ class Product {
   @Type(() => Cart)
   @IsOptional()
   carts?: Array<Cart>;
+
+  @ApiProperty({
+    required: false,
+    type: String,
+  })
+  @IsString()
+  @IsOptional()
+  @Field(() => String, {
+    nullable: true,
+  })
+  name!: string | null;
 }
 
 export { Product as Product };

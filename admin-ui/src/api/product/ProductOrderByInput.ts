@@ -4,4 +4,5 @@ export type ProductOrderByInput = {
   id?: SortOrder;
   createdAt?: SortOrder;
   updatedAt?: SortOrder;
+  name?: SortOrder;
 };

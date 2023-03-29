@@ -2,4 +2,5 @@ import { CartCreateNestedManyWithoutProductsInput } from "./CartCreateNestedMany
 
 export type ProductCreateInput = {
   carts?: CartCreateNestedManyWithoutProductsInput;
+  name?: string | null;
 };
