@@ -67,6 +67,8 @@ export class CartControllerBase {
             id: true,
           },
         },
+
+        name: true,
       },
     });
   }
@@ -97,6 +99,8 @@ export class CartControllerBase {
             id: true,
           },
         },
+
+        name: true,
       },
     });
   }
@@ -128,6 +132,8 @@ export class CartControllerBase {
             id: true,
           },
         },
+
+        name: true,
       },
     });
     if (result === null) {
@@ -176,6 +182,8 @@ export class CartControllerBase {
               id: true,
             },
           },
+
+          name: true,
         },
       });
     } catch (error) {
@@ -215,6 +223,8 @@ export class CartControllerBase {
               id: true,
             },
           },
+
+          name: true,
         },
       });
     } catch (error) {

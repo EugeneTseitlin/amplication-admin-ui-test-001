@@ -56,6 +56,7 @@ export class ProductControllerBase {
         id: true,
         createdAt: true,
         updatedAt: true,
+        name: true,
       },
     });
   }
@@ -80,6 +81,7 @@ export class ProductControllerBase {
         id: true,
         createdAt: true,
         updatedAt: true,
+        name: true,
       },
     });
   }
@@ -105,6 +107,7 @@ export class ProductControllerBase {
         id: true,
         createdAt: true,
         updatedAt: true,
+        name: true,
       },
     });
     if (result === null) {
@@ -139,6 +142,7 @@ export class ProductControllerBase {
           id: true,
           createdAt: true,
           updatedAt: true,
+          name: true,
         },
       });
     } catch (error) {
@@ -172,6 +176,7 @@ export class ProductControllerBase {
           id: true,
           createdAt: true,
           updatedAt: true,
+          name: true,
         },
       });
     } catch (error) {
@@ -209,6 +214,8 @@ export class ProductControllerBase {
             id: true,
           },
         },
+
+        name: true,
       },
     });
     if (results === null) {

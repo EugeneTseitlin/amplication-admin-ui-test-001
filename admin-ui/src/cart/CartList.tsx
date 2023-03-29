@@ -30,6 +30,7 @@ export const CartList = (props: ListProps): React.ReactElement => {
         >
           <TextField source={PRODUCT_TITLE_FIELD} />
         </ReferenceField>
+        <TextField label="Name" source="name" />
       </Datagrid>
     </List>
   );

@@ -1,11 +1,14 @@
 import * as React from "react";
+
 import {
   Edit,
   SimpleForm,
   EditProps,
   ReferenceArrayInput,
   SelectArrayInput,
+  TextInput,
 } from "react-admin";
+
 import { CartTitle } from "../cart/CartTitle";
 
 export const ProductEdit = (props: EditProps): React.ReactElement => {
@@ -20,6 +23,7 @@ export const ProductEdit = (props: EditProps): React.ReactElement => {
         >
           <SelectArrayInput optionText={CartTitle} />
         </ReferenceArrayInput>
+        <TextInput label="Name" source="name" />
       </SimpleForm>
     </Edit>
   );

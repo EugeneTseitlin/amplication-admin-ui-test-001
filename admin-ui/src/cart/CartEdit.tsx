@@ -5,6 +5,7 @@ import {
   EditProps,
   ReferenceInput,
   SelectInput,
+  TextInput,
 } from "react-admin";
 import { ProductTitle } from "../product/ProductTitle";
 
@@ -19,6 +20,7 @@ export const CartEdit = (props: EditProps): React.ReactElement => {
         >
           <SelectInput optionText={ProductTitle} />
         </ReferenceInput>
+        <TextInput label="Name" source="name" />
       </SimpleForm>
     </Edit>
   );

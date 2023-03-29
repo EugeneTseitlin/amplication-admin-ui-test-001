@@ -23,6 +23,7 @@ export const CartShow = (props: ShowProps): React.ReactElement => {
         >
           <TextField source={PRODUCT_TITLE_FIELD} />
         </ReferenceField>
+        <TextField label="Name" source="name" />
       </SimpleShowLayout>
     </Show>
   );

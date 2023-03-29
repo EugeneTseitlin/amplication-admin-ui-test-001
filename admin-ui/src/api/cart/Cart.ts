@@ -5,4 +5,5 @@ export type Cart = {
   createdAt: Date;
   updatedAt: Date;
   my_product?: Product | null;
+  name: string | null;
 };

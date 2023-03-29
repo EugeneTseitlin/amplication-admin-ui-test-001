@@ -5,4 +5,5 @@ export type Product = {
   createdAt: Date;
   updatedAt: Date;
   carts?: Array<Cart>;
+  name: string | null;
 };

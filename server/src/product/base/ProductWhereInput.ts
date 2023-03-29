@@ -15,6 +15,7 @@ import { StringFilter } from "../../util/StringFilter";
 import { Type } from "class-transformer";
 import { IsOptional, ValidateNested } from "class-validator";
 import { CartListRelationFilter } from "../../cart/base/CartListRelationFilter";
+import { StringNullableFilter } from "../../util/StringNullableFilter";
 
 @InputType()
 class ProductWhereInput {
@@ -40,6 +41,17 @@ class ProductWhereInput {
     nullable: true,
   })
   carts?: CartListRelationFilter;
+
+  @ApiProperty({
+    required: false,
+    type: StringNullableFilter,
+  })
+  @Type(() => StringNullableFilter)
+  @IsOptional()
+  @Field(() => StringNullableFilter, {
+    nullable: true,
+  })
+  name?: StringNullableFilter;
 }
 
 export { ProductWhereInput as ProductWhereInput };

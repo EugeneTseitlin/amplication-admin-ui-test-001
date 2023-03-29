@@ -2,4 +2,5 @@ import { CartUpdateManyWithoutProductsInput } from "./CartUpdateManyWithoutProdu
 
 export type ProductUpdateInput = {
   carts?: CartUpdateManyWithoutProductsInput;
+  name?: string | null;
 };
